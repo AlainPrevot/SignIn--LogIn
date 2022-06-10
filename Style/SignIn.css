@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SingUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.SingUp h1 {
+  color: #21BFBF;
+  font-size: 1.6em;
+  margin: 30px 0;
+}
+
+.SingUp .login_formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.SingUp .login_formulario input {
+  margin: 16px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+  padding: 6px 10px;
+  background-color: transparent;
+  outline: none;
+}
+
+.SingUp .login_formulario input::-webkit-input-placeholder {
+  color: black;
+}
+
+.SingUp .login_formulario input:-ms-input-placeholder {
+  color: black;
+}
+
+.SingUp .login_formulario input::-ms-input-placeholder {
+  color: black;
+}
+
+.SingUp .login_formulario input::placeholder {
+  color: black;
+}
+
+.SingUp .login_formulario button {
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #21BFBF;
+  font-size: 20px;
+  padding: 1px 6px;
+  margin: 20px 0;
+}
+
+.SingUp .login_formulario button:hover {
+  -webkit-filter: brightness(108%);
+          filter: brightness(108%);
+}
+
+.SingUp a {
+  color: #21BFBF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.SingUp a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  width: 100%;
+  bottom: 0px;
+}
+
+footer a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 460px) {
+  .SingUp {
+    height: 94vh;
+    max-width: 430px;
+    width: 90%;
+    padding: 60px 32px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .SingUp a {
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer a {
+    font-size: 0.8em;
+    margin: 30px 3%;
+    display: block;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 460px) {
+  body {
+    background: #F2F2F4;
+  }
+  .SingUp {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 430px;
+    height: 500px;
+    background-color: white;
+  }
+  .SingUp .login_formulario input {
+    width: 260px;
+  }
+  .SingUp a {
+    margin-top: 12px;
+  }
+  footer {
+    height: 30px;
+    position: absolute;
+  }
+  footer a {
+    font-size: 0.9em;
+    margin: 0px 0.6%;
+  }
+}
+/*# sourceMappingURL=SignIn.css.map */

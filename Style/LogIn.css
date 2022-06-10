@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login h1 {
+  color: #21BFBF;
+  font-size: 1.6em;
+}
+
+.login .login_formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login .login_formulario input {
+  margin: 16px 0;
+  font-size: 1em;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+  padding: 6px 10px;
+  background-color: transparent;
+  outline: none;
+}
+
+.login .login_formulario input::-webkit-input-placeholder {
+  color: black;
+}
+
+.login .login_formulario input:-ms-input-placeholder {
+  color: black;
+}
+
+.login .login_formulario input::-ms-input-placeholder {
+  color: black;
+}
+
+.login .login_formulario input::placeholder {
+  color: black;
+}
+
+.login .login_formulario button {
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #21BFBF;
+  font-size: 20px;
+  padding: 1px 6px;
+  margin: 20px 0;
+}
+
+.login .login_formulario button:hover {
+  -webkit-filter: brightness(108%);
+          filter: brightness(108%);
+}
+
+.login .login_formulario div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.login .login_formulario div h2 {
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.login .login_formulario div .login_formulario--enlace {
+  margin: 6px;
+}
+
+.login .login_formulario div a {
+  color: #21BFBF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login .login_formulario div a:hover {
+  text-decoration: underline;
+}
+
+.login .login_redes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login_redes div a {
+  width: 36px;
+  height: 36px;
+  margin: 8px 20px;
+  background-size: cover;
+}
+
+footer a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 460px) {
+  .login {
+    height: 94vh;
+    max-width: 430px;
+    padding: 60px 40px;
+  }
+  .login h1 {
+    margin: 30px 0;
+  }
+  .login .login_redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+    height: 14%;
+  }
+  .login .login_redes h2 {
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 20px 0;
+  }
+  .login .login_redes div {
+    height: 50px;
+  }
+  .login .login_redes div a {
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+  }
+  .login .login_redes div .gmail {
+    background-image: url(https://alainprevot.github.io/SignIn--LogIn/Icons/gmail-negro.png);
+    width: 30px;
+    height: 30px;
+  }
+  .login .login_redes div .facebook {
+    background-image: url(https://alainprevot.github.io/SignIn--LogIn/Icons/facebook-negro.png);
+    width: 40px;
+    height: 40px;
+  }
+  .login .login_redes div .linkedin {
+    background-image: url(https://alainprevot.github.io/SignIn--LogIn/Icons/linkedin-negro.png);
+    width: 36px;
+    height: 36px;
+  }
+  footer {
+    width: 100%;
+    bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer a {
+    font-size: 0.8em;
+    margin: 30px 3%;
+    display: block;
+    width: 40%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 460px) {
+  body {
+    background: #F2F2F4;
+  }
+  .login {
+    height: 460px;
+    width: 450px;
+    padding: 50px 66px;
+    background-color: white;
+  }
+  .login h1 {
+    margin-bottom: 30px;
+  }
+  .login .login_formulario div a {
+    margin-top: 6px;
+  }
+  .login .login_redes {
+    width: 450px;
+    background-color: #21BFBF;
+    position: relative;
+    padding-top: 8px;
+    margin-top: 20px;
+    left: -66px;
+  }
+  .login .login_redes h2 {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+  }
+  .login .login_redes div a {
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  .login .login_redes div a:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .login .login_redes div .gmail {
+    width: 30px;
+    height: 30px;
+    background-image: url(https://alainprevot.github.io/SignIn--LogIn/Icons/gmail.png);
+  }
+  .login .login_redes div .facebook {
+    background-image: url(https://alainprevot.github.io/SignIn--LogIn/Icons/facebook.png);
+  }
+  .login .login_redes div .linkedin {
+    background-image: url(https://alainprevot.github.io/SignIn--LogIn/Icons/linkedin.png);
+  }
+  footer {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+  }
+  footer a {
+    font-size: 0.9em;
+    margin: 0px 0.6%;
+  }
+}
+/*# sourceMappingURL=LogIn.css.map */
